@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Full Page Scroll</title>
+  <style>
+    body {
+      margin: 0;
+      overflow-y: hidden; /* Prevents normal scrolling */
+    }
+    .container {
+      height: 100vh;
+      scroll-snap-type: y mandatory;
+      overflow-y: scroll;
+    }
+    section {
+      height: 100vh; /* Full viewport height */
+      scroll-snap-align: start;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+    }
+    .section1 { background-color: #4caf50; }
+    .section2 { background-color: #2196f3; }
+    .section3 { background-color: #ff5722; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section class="section1">Welcome to Page 1</section>
+    <section class="section2">This is Page 2</section>
+    <section class="section3">And this is Page 3</section>
+  </div>
+</body>
+</html>

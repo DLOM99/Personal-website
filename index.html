@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;500;700&family=Lato:wght@400;500;700&family=Poppins:wght@400;500;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Poppins:wght@700&family=Quicksand:wght@700&family=Rubik:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: 'Poppins',sans-serif;
+        }
+        a {
+            text-decoration: none;
+        }
+        body{
+            background-image: url('Picture/ales-nesetril-Im7lZjxeLhg-unsplash.jpg'); /* Replace with your image URL */
+            background-size: cover; /* Makes the image cover the entire body */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            background-position: center; /* Centers the image */
+            margin: 0; /* Removes any default margin */
+            height: 100vh; 
+            margin: 0 100px; 
+            overflow: hidden;
+            background-color: #000;
+
+            
+            
+                   
+        }
+        header {
+            display: flex;
+            justify-content: space-between; /* Distribute items horizontally */
+            align-items: center; /* Center items vertically */
+            opacity:1;
+            padding: 10px;
+            width: 80%;
+            margin-top: 10px;
+            margin-left: 5px;
+            z-index:2;
+            
+        }
+
+
+        nav {
+            display: flex;
+            list-style-type: none; /* Remove default list styles */
+            padding: 0; /* Remove default padding */
+            gap:35px;
+            font-family: 'Poppins','Open Sans','Roboto', 'Lato', 'Poppins', 'Inter', sans-serif;
+
+            
+        }
+        nav li {
+            font-size: 15px; /* Adjust font size as needed */
+            font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
+            font-weight: lighter;
+            
+            
+        }
+        nav li a {
+            color: white; /* Use the current text color */
+            text-decoration: none; /* Remove underline */
+            
+        }
+        nav li a:hover {
+            color:#E0BB20;
+            transition: 0.3s ease-out;
+        }
+        h3{
+            color: white;
+            font-weight: 700;
+            font-family: sans-serif;
+        }
+        .home{
+            display:flex;
+            
+            align-items: center;
+            height: 75vh;
+            width:75vh;
+            
+            padding: 60px 9px 0;
+            color:#ffff;
+            z-index: 100;
+        }
+        .home-info h1{
+            font-size : 55px;
+        }
+        .home-info h2{
+            font-size : 32px;
+            margin-top: -10px;
+            color: #E0BB20;
+
+        }
+        .home-info p {
+            font-size: 16px;
+            margin: 10px 0 25px;
+        }
+        .home-info .btn-sci {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .btn {
+            display:inline-block;
+            padding: 10px 30px;
+            background: #E0BB20;
+            border: 2px solid #E0BB20;
+            border-radius: 40px;
+            box-shadow: 0 0 10px#E0BB20;
+            font-size: 16px;
+            color: white;
+            font-weight:600 ;
+            transition : .3s ease-in;
+
+        }
+        .btn:hover {
+            background:transparent;
+            color:white;
+            box-shadow: none;
+        }
+        .btn-sci .second {
+            background-color: inherit;
+        }
+        .second:hover {
+            background-color: #E0BB20;
+        }
+
+
+        .footerContainer{
+            width:100%;
+            padding: 0px;
+        }
+        .socialIcons{
+            display:flex;
+            justify-content: center;
+
+        }
+        .socialIcons a {
+            text-decoration: none;
+            padding: 10px;
+            background-color: inherit ;
+            margin:10px;
+            border-radius: 50%;
+        }
+        .socialIcons a i{
+            font-size: 2em;
+            color: white;
+            opacity:0.9;
+
+        }
+        .socialIcons a:hover{
+            background-color:inherit ;
+            transition: 0.2 ;
+        }
+
+        .socialIcons a i:hover{
+            color: #E0BB20;
+            transition: 0.5 ease-out;
+        }
+
+        .footerBottom{
+            
+            padding:20px ;
+            text-align: center;
+        }
+        .footerBottom p{
+            color: white;
+            background: none;
+            background-color: transparent;
+        }
+        .designer {
+            opacity:0.7;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 400;
+            margin: 0px 5px;
+            color: #E0BB20;
+        }
+
+
+
+
+
+
+
+
+ 
+
+    </style>
+</head>
+<body>
+        <header>
+        <h3>Daniel</h3>
+        
+        <nav>
+            <li><a href="/Index.html">Home</a></li>
+            <li><a href="/GLCM.html">About</a></li>
+            <li><a href="/GLCM.html">Skills</a></li>
+            <li><a href="/GLCM.html">Projects</a></li>
+            <li><a href="/GLCM.html">Contact</a></li>
+           
+        </nav>
+       
+    </header>
+
+    <section class="home">
+        <div class = "home-info">
+            <h1>Daniel Mul<span>en</span>da</h1>
+            <h2>I'm a Web developer</h2>
+            
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, ex necessitatibus ut expedita cum impedit amet ea aut animi distinctio repudiandae officia earum. Eveniet, repellat excepturi ipsum molestiae recusandae exercitationem.</p>
+            
+            
+            <div class ="btn-sci">
+                <a href="#" class ="btn"> Download CV</a>
+                <a href="#" class ="btn second"> Download CV</a>
+            </div>
+        </div> 
+
+
+
+
+
+    </section>
+
+    <footer>
+        <div class="footerContainer">
+            <div class ="socialIcons"> 
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-solid fa-envelope"></i></a>
+
+            </div>
+            
+        </div>
+        <div class="footerBottom">
+            <p> Copyright &copy; 2025; Designed by <span class ="designer"> Daniel Mulenda</span> </p>
+        </div>       
+    </footer>
+
+
+
+</body>
+</html>
