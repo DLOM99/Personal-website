@@ -18,75 +18,65 @@
         }
         body {
             position: relative;
-            margin: 0 100px; /* Keep your custom margin */
-            height: auto; 
-            /*overflow: hidden;  Prevent scrolling */
-            background-color: #000; /* Fallback background color */
+            margin: 0 100px;
+            height: auto;
+            background-color: #000;
         }
 
         body::before {
-            content: ''; /* Required for the pseudo-element */
+            content: '';
             position: absolute;
             top: 0;
             left: 0;
-            width: calc(100% + 200px); /* Adjust for the 100px left/right margin */
+            width: calc(100% + 200px);
             height: 100%;
-            background-image: url('Picture/ales-nesetril-Im7lZjxeLhg-unsplash.jpg'); /* Your background image */
-            background-size: cover; /* Makes the image cover the container */
-            background-repeat: no-repeat; /* Prevents repetition */
-            background-position: center; /* Centers the image */
-            filter: blur(20px); /* Adds the blur effect */
-            z-index: -1; /* Places the pseudo-element behind content */
-            margin-left: -100px; /* Compensate for the body margin */
+            background-image: url('Picture/ales-nesetril-Im7lZjxeLhg-unsplash.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            filter: blur(20px);
+            z-index: -1;
+            margin-left: -100px;
         }
-
-
 
         header {
             display: flex;
-            justify-content: space-between; /* Distribute items horizontally */
-            align-items: center; /* Center items vertically */
-            opacity:1;
+            justify-content: space-between;
+            align-items: center;
+            opacity: 1;
             padding: 10px;
             width: 80%;
             margin-top: 10px;
             margin-left: 5px;
-            z-index:2;
-            
+            z-index: 2;
         }
-
 
         nav {
             display: flex;
-            list-style-type: none; /* Remove default list styles */
-            padding: 0; /* Remove default padding */
-            gap:35px;
+            list-style-type: none;
+            padding: 0;
+            gap: 35px;
             font-family: 'Poppins','Open Sans','Roboto', 'Lato', 'Poppins', 'Inter', sans-serif;
-
-            
         }
         nav li {
-            font-size: 15px; /* Adjust font size as needed */
-            font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
+            font-size: 15px;
+            font-family: 'Montserrat', sans-serif;
             font-weight: lighter;
-            
-            
         }
         nav li a {
-            color: white; /* Use the current text color */
-            text-decoration: none; /* Remove underline */
-            
+            color: white;
+            text-decoration: none;
         }
         nav li a:hover {
-            color:#E0BB20;
+            color: #E0BB20;
             transition: 0.3s ease-out;
         }
-        h3{
+        h3 {
             color: white;
             font-weight: 700;
             font-family: sans-serif;
         }
-        section{
+        section {
             min-height: 100vh;
             height: auto;
             width: 80%;
@@ -95,219 +85,166 @@
             margin: 0 10%;
             margin-top: 5%;
             overflow: visible;
-            
-            
         }
-        .a{
+        .a {
             color: white;
             text-align: center;
             position: relative;
             top: 50px;
             font-weight: 700;
             font-size: 30px;
-            
         }
-        .Container{
+        .Container {
             height: 50rem;
             width: 70%;
             border-radius: 50px;
-            /*background-color: #222222;*/
             margin: 10px 0;
             align-items: center;
             justify-content: center;
-
-            
-            
-
-
         }
-        .compartement{
+        .compartement {
             height: 15rem;
             width: 80%;
             background-color: inherit;
             border-radius: 40px;
             margin: 10px;
-            box-shadow:0 0 10px white ;
-
+            box-shadow: 0 0 10px white;
         }
-        .d1{
+        .d1 {
             margin-left: 120px;
-           
-            
-
-        
         }
-
-        .c1{
-            
+        .c1 {
             position: relative;
             width: 1600px;
-            
-
         }
-
-
-        .c2{
-
-            
-            
-            /*background-color: red;*/
+        .c2 {
             display: flex;
             flex-direction: column;
-            
-            
-
-
-            
-
         }
-        .c3{
-
-
+        .c3 {
             background-color: white;
             height: 10rem;
             margin: 10px 0;
             border-radius: 50px;
             width: 80%;
             transition: all 0.5s ease-in-out;
-            
-
-
         }
-        .c3:hover{
+        .c3:hover {
             transform: scale(1.30);
             background-color: inherit;
-            padding:0 15px;            
+            padding: 0 15px;
         }
-
-        .compartement-inside{
+        .compartement-inside {
             display: flex;
-            /*justify-content: center;*/
             align-items: baseline;
-            padding: 10px 0 10px 20px; 
+            padding: 10px 0 10px 20px;
             gap: 5px;
         }
-
         .compartement-inside i {
-            font-size: 24px; /* Adjust icon size */
-            color: #FCFAF1; /* Optional: Add a color to the icon */
+            font-size: 24px;
+            color: #FCFAF1;
         }
-        h1{
-           color: white;
+        h1 {
+            color: white;
         }
         .compartement p {
             font-size: 15px;
             color: white;
             text-align: center;
-
         }
-        .image{
-            width:100%;
-            height:100%;
+        .image {
+            width: 100%;
+            height: 100%;
             border-radius: 50px;
         }
         .image img {
-            width: 100%;      /* Make the image take up 100% of the container's width */
-            height: 100%;     /* Make the image take up 100% of the container's height */
-            object-fit: cover; /* Ensure the image covers the entire div without stretching */
-            border-radius: 10px; /* Optional: If you want rounded corners on the image */
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
             border-radius: 50px;
         }
-        h2{
-
+        h2 {
             color: #E0BB20;
-            font-size: 24px; /* Set a reasonable font size */
-             padding: 10px; /* Add some padding for spacing */
-             
+            font-size: 24px;
+            padding: 10px;
         }
-        span{
+        span {
+            color: #E0BB20;
+        }
+
+        /* Updated Ease-in animation for falling from above */
+        .ease-in {
+            opacity: 0;
+            transform: translateY(-50px); /* Start above for a falling effect */
+            animation: easeIn 1s ease-in-out forwards; /* Smooth fall */
+        }
+
+        @keyframes easeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0); /* End at natural position */
+            }
+        }
+        .active{
             color:#E0BB20;
         }
-
-        
-        
     </style>
 </head>
 <body>
     <header>
         <h3>Daniel</h3>
-        
         <nav>
-            <li><a href="/Index.html">Home</a></li>
-            <li><a href="/GLCM.html">About</a></li>
-            <li><a href="/GLCM.html">Skills</a></li>
-            <li><a href="/GLCM.html">Projects</a></li>
-            <li><a href="/GLCM.html">Contact</a></li>
-           
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/About.html" class = "active">About</a></li>
+            <li><a href="/Skills.html">Skills</a></li>
+            <li><a  href="/Projects.html">Projects</a></li>
+            <li><a href="/contact.html">Contact</a></li>
         </nav>
-
-       
     </header>
     
-    <p class="a"> About Me </p>
+    <p class="a ease-in"> About Me </p>
     <section>
-        <div class ="Container c1"> 
-            <div class=" compartement d1 "> 
-                <div class = "compartement-inside">
+        <div class="Container c1"> 
+            <div class="compartement d1 ease-in"> 
+                <div class="compartement-inside">
                     <i class="fas fa-child"></i>
-                   
                     <h1> Early Life</h1>
                 </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis delectus aliquam eum reprehenderit earum provident illum praesentium molestias, similique ullam adipisci animi iure perferendis deserunt, consequuntur qui commodi quas atque.</p>
-                
-                
             </div>
-            <div class=" compartement d2 "> 
-                <div class = "compartement-inside">
+            <div class="compartement d2 ease-in"> 
+                <div class="compartement-inside">
                     <i class="fas fa-graduation-cap"></i> 
-                   
                     <h1> Education</h1>
                 </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis delectus aliquam eum reprehenderit earum provident illum praesentium molestias, similique ullam adipisci animi iure perferendis deserunt, consequuntur qui commodi quas atque.</p>
-                
-               
             </div>
-            <div class=" compartement d1 "> 
-                <div class = "compartement-inside">
+            <div class="compartement d1 ease-in"> 
+                <div class="compartement-inside">
                     <i class="fas fa-heart"></i>
-                   
                     <h1> Passion&<span>Hobbies</span></h1>
                 </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis delectus aliquam eum reprehenderit earum provident illum praesentium molestias, similique ullam adipisci animi iure perferendis deserunt, consequuntur qui commodi quas atque.</p>
-                
             </div>
-            
-
         </div>
-        <div class ="Container c2"> 
-            <h2> Hover over here !</h2>
-            
-            <div class = "c3">
+        <div class="Container c2"> 
+            <h2 class="ease-in"> Hover over here !</h2>
+            <div class="c3 ease-in">
                 <div class="image">
-                    <img src ="Picture/IMG_5458.JPG" alt="noir"  >
+                    <img src="Picture/IMG_5458.JPG" alt="noir">
                 </div>
-
             </div>
-
-            <div class = "c3">
-
-            </div>
-
-            <div class = "c3">
-
-            </div>
-            <div class = "c3">
-
-            </div>           
-
+            <div class="c3 ease-in"></div>
+            <div class="c3 ease-in"></div>
+            <div class="c3 ease-in"></div>           
         </div>
-
-
-
-
-
-
     </section>
-    
+
+    <script>
+        // Select all elements with .ease-in class except those inside header
+        document.querySelectorAll('body > *:not(header) .ease-in').forEach((el, index) => {
+            el.style.animationDelay = `${index * 0.5}s`; // 0.5s delay for a slow cascade
+        });
+    </script>
 </body>
 </html>

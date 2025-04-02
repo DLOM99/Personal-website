@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
     <style>
-                *{
+        *{
             margin:0;
             padding:0;
             box-sizing: border-box;
@@ -20,64 +20,54 @@
         }
         body {
             position: relative;
-            margin: 0 100px; /* Keep your custom margin */
-            height: 100vh; 
-            /*overflow: hidden;  Prevent scrolling */
-            background-color: #000; /* Fallback background color */
+            margin: 0 100px;
+            height: 100vh;
+            background-color: #000;
         }
 
         body::before {
-            content: ''; /* Required for the pseudo-element */
+            content: '';
             position: absolute;
             top: 0;
             left: 0;
-            width: calc(100% + 200px); /* Adjust for the 100px left/right margin */
+            width: calc(100% + 200px);
             height: 100%;
-            background-image: url('Picture/ales-nesetril-Im7lZjxeLhg-unsplash.jpg'); /* Your background image */
-            background-size: cover; /* Makes the image cover the container */
-            background-repeat: no-repeat; /* Prevents repetition */
-            background-position: center; /* Centers the image */
-            filter: blur(20px); /* Adds the blur effect */
-            z-index: -1; /* Places the pseudo-element behind content */
-            margin-left: -100px; /* Compensate for the body margin */
+            background-image: url('Picture/ales-nesetril-Im7lZjxeLhg-unsplash.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            filter: blur(20px);
+            z-index: -1;
+            margin-left: -100px;
         }
-
-
 
         header {
             display: flex;
-            justify-content: space-between; /* Distribute items horizontally */
-            align-items: center; /* Center items vertically */
+            justify-content: space-between;
+            align-items: center;
             opacity:1;
             padding: 10px;
             width: 80%;
             margin-top: 10px;
             margin-left: 5px;
             z-index:2;
-            
         }
-
 
         nav {
             display: flex;
-            list-style-type: none; /* Remove default list styles */
-            padding: 0; /* Remove default padding */
+            list-style-type: none;
+            padding: 0;
             gap:35px;
             font-family: 'Poppins','Open Sans','Roboto', 'Lato', 'Poppins', 'Inter', sans-serif;
-
-            
         }
         nav li {
-            font-size: 15px; /* Adjust font size as needed */
-            font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
+            font-size: 15px;
+            font-family: 'Montserrat', sans-serif;
             font-weight: lighter;
-            
-            
         }
         nav li a {
-            color: white; /* Use the current text color */
-            text-decoration: none; /* Remove underline */
-            
+            color: white;
+            text-decoration: none;
         }
         nav li a:hover {
             color:#E0BB20;
@@ -92,22 +82,19 @@
             margin-top: 10px;
             text-align: center;
             color:white;
-
         }
         h5{
             color:white;
         }
 
-     .a{
+        .a{
             color: white;
             text-align: center;
             position: relative;
             top: 50px;
             font-weight: 700;
             font-size: 30px;
-            
         }
-
 
         .subject{
             display:flex;
@@ -122,9 +109,6 @@
             background-color:inherit;
             display: flex;
             flex-direction: column;
-            
-            
-            
         }
         section{
             min-height: 100vh;
@@ -136,8 +120,6 @@
             margin-top: 5%;
             overflow: visible;
             justify-content: center;
-            
-            
         }
         .bar-background {
             height: 60px;
@@ -149,28 +131,23 @@
             gap: 10px;
             margin-left: 10px;
             margin-top:10px;
-
         }
         .bar-border{
             width : 70%;
             height: 10%;
             background-color: aqua;
             border-radius:40px;
-        
         }
         .bar-progress{
             width: 50%;
             height:100%;
             background-color: brown;
             border-radius:40px;
-            
-
         }
         .two{
             width: 70%;
             height:100%;
-            background-color: brown;            
-
+            background-color: brown;
         }
         .icons{
             border-radius: 50%;
@@ -192,214 +169,180 @@
             display: flex;
             flex-direction: row;
             gap: 10px;
-
         }
         .container-border2{
             width: 80%;
             height:15px;
             background-color: white;
-
-
         }
         .container-progress{
             background-color: yellow;
             height: 100%;
         }
+        .active{
+            color: #E0BB20;
+        }
 
+        /* Added Ease-in animation for falling from above */
+        .ease-in {
+            opacity: 0;
+            transform: translateY(-50px);
+            animation: easeIn 1s ease-in-out forwards;
+        }
 
+        @keyframes easeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
     </style>
 
 </head>
 <body>
     <header>
         <h3>Daniel</h3>
-        
         <nav>
-            <li><a href="/Index.html">Home</a></li>
-            <li><a href="/GLCM.html">About</a></li>
-            <li><a href="/GLCM.html">Skills</a></li>
-            <li><a href="/GLCM.html">Projects</a></li>
-            <li><a href="/GLCM.html">Contact</a></li>
-           
+            <li><a href="/index.html" >Home</a></li>
+            <li><a href="/About.html">About</a></li>
+            <li><a href="/Skills.html" class = "active">Skills</a></li>
+            <li><a  href="/Projects.html"> Projects</a></li>
+            <li><a href="/contact.html">Contact</a></li>
         </nav>
-
-       
     </header>
-    <p class="a"> Skills</p>
-    <section class = "main">
-        <div class="container">
-            <h4> Soft  </h4>
-            <div class="bar-background">
+    <p class="a ease-in"> Skills</p>
+    <section class="main">
+        <div class="container ease-in">
+            <h4 class = "ease-in"> Soft  </h4>
+            <div class="bar-background ease-in">
                 <div class="icons">
                     <a href=""><i class="fa-brands fa-java"></i></a>
                 </div>
                 <div class="bar-border">
-                    <div class="bar-progress " style = "width: 80%">
-    
+                    <div class="bar-progress " style="width: 80%">
                     </div>
                 </div>
                 <h5> 80%</h5>
             </div>
-
-            <div class="bar-background">
+            <div class="bar-background ease-in">
                 <div class="icons">
                     <a href=""><i class="fa-brands fa-python"></i></a>
                 </div>
                 <div class="bar-border">
-                    <div class="bar-progress " style = "width: 50%" >
-    
+                    <div class="bar-progress " style="width: 50%" >
                     </div>
                 </div>
                 <h5> 50%</h5>
             </div>
-
-            <div class="bar-background">
+            <div class="bar-background ease-in">
                 <div class="icons">
                     <a href=""><i class="fa-brands fa-js"></i></a>
                 </div>
                 <div class="bar-border">
-                    <div class="bar-progress " style = "width: 30%">
-    
+                    <div class="bar-progress " style="width: 30%">
                     </div>
                 </div>
                 <h5> 30%</h5>
             </div>
-
-            <div class="bar-background">
+            <div class="bar-background ease-in">
                 <div class="icons">
                     <a href=""><i class="fa-brands fa-html5"></i></a>
                 </div>
                 <div class="bar-border">
-                    <div class="bar-progress " style = "width:80%">
-    
+                    <div class="bar-progress " style="width:80%">
                     </div>
                 </div>
                 <h5> 80%</h5>
             </div>
-
-            <div class="bar-background">
+            <div class="bar-background ease-in">
                 <div class="icons">
                     <a href=""><i class="fa-brands fa-css3-alt"></i></a>
                 </div>
                 <div class="bar-border">
-                    <div class="bar-progress " style = "width: 65%">
-    
+                    <div class="bar-progress " style="width: 65%">
                     </div>
                 </div>
                 <h5> 65%</h5>
             </div>
-
-            <div class="bar-background">
+            <div class="bar-background ease-in">
                 <div class="icons">
                     <i class="devicon-mysql-plain"></i>
                 </div>
                 <div class="bar-border">
-                    <div class="bar-progress " style = "width: 30%">
-    
+                    <div class="bar-progress " style="width: 30%">
                     </div>
                 </div>
                 <h5> 30%</h5>
             </div>
-            <div class="bar-background">
+            <div class="bar-background ease-in">
                 <div class="icons">
                     <i class="devicon-spring-original"></i>
                 </div>
                 <div class="bar-border">
-                    <div class="bar-progress " style = "width: 20%">
-    
+                    <div class="bar-progress " style="width: 20%">
                     </div>
                 </div>
                 <h5> 20%</h5>
             </div>
-
-            <div class="bar-background">
+            <div class="bar-background ease-in">
                 <div class="icons">
                     <i class="devicon-flask-original"></i>
                 </div>
                 <div class="bar-border">
-                    <div class="bar-progress " style = "width: 10%">
-    
+                    <div class="bar-progress " style="width: 10%">
                     </div>
                 </div>
                 <h5> 10%</h5>
             </div>
         </div>
-
-        
-
-        <div class="container langue">
-            <h4> Language </h4>
-
-            <div class="bar-background">
+        <div class="container langue ease-in">
+            <h4 class = "ease-in"> Language </h4>
+            <div class="bar-background ease-in">
                 <div class="icons1">
-                <h5>french</h5>
+                    <h5>French</h5>
                 </div>
                 <div class="bar-border">
-                    <div class="bar-progress " style = "width: 95%">
-    
+                    <div class="bar-progress " style="width: 95%">
                     </div>
                 </div>
                 <h5> 95%</h5>
-
             </div>
-
-
-            <div class="bar-background">
+            <div class="bar-background ease-in">
                 <div class="icons1">
-                <h5>English</h5>
+                    <h5>English</h5>
                 </div>
                 <div class="bar-border">
-                    <div class="bar-progress " style = "width: 85%">
-    
+                    <div class="bar-progress " style="width: 85%">
                     </div>
                 </div>
                 <h5> 85%</h5>
-
             </div>
-
-
-
-            <div class="bar-background">
+            <div class="bar-background ease-in">
                 <div class="icons1">
-                <h5>Lingala</h5>
+                    <h5>Lingala</h5>
                 </div>
                 <div class="bar-border">
-                    <div class="bar-progress " style = "width: 70%">
-    
+                    <div class="bar-progress " style="width: 70%">
                     </div>
                 </div>
                 <h5> 70%</h5>
-
             </div>
-
-
-            <div class="bar-background">
+            <div class="bar-background ease-in">
                 <div class="icons1">
-                <h5>Spanish</h5>
+                    <h5>Spanish</h5>
                 </div>
                 <div class="bar-border">
-                    <div class="bar-progress " style = "width: 45%">
-    
+                    <div class="bar-progress " style="width: 45%">
                     </div>
                 </div>
                 <h5> 45%</h5>
-
-
-
             </div>
-
-
-
-
-
-
-
-
-            
         </div>
-
-
     </section>
-    
+    <script>
+        document.querySelectorAll('body > *:not(header) .ease-in').forEach((el, index) => {
+            el.style.animationDelay = `${index * 0.2}s`;
+        });
+    </script>
 </body>
 </html>
